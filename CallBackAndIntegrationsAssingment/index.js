@@ -16,8 +16,6 @@ var data = {};
 function cb(name) {
   console.log('sanjay sharma')
 }
-var test = [createNetSuiteConnection, createMockableConnection]
-
 async.series([
       async.parallel([createNetSuiteConnection('SOME NAME ', cb), createMockableConnection('some name', cb), createIntegrtation('some Name', cb)], function(err) {
           if (err) {
