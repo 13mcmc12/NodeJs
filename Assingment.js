@@ -41,7 +41,7 @@ var data2 = {data:[
         }
     }
 ]}
-var xmlRenderStr2 = '<FabricContentValues>\n{{#each data as |subData| }}\n<FabricContentValue> \n{{#each subData as |values key |}} {{#each values as | value key |}} <fabricMaterialName>{{materialName}}</fabricMaterialName> \n <fabricColor>{{materialColor}}</fabricColor> {{/each}} {{/each}}</FabricContentValue>{{/each}}</FabricContentValues>'
+var xmlRenderStr2 = '<FabricContentValues>\n{{#each data as |subData| }}\n<FabricContentValue> {{#each subData as |values key |}} {{#each values as | value key |}}\n <fabricMaterialName>{{materialName}}</fabricMaterialName> <fabricColor>{{materialColor}}</fabricColor> \n{{/each}} {{/each}}</FabricContentValue>{{/each}}</FabricContentValues>'
 var template2  = handleBars.compile(xmlRenderStr2)
 var html2 = template2(data2)
 console.log(html2)
