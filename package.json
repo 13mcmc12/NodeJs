@@ -1,0 +1,17 @@
+{
+  "name": "asingment",
+  "version": "0.0.1",
+  "main": "index.js",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
+}
